@@ -14,6 +14,7 @@ pipeline{
 		stage('Deploy'){
 			steps{
 				echo "Deploy"
+				echo "Build ID: ${env.BUILD_ID}, Jenkins URL: ${env.JENKINS_URL}" >> EnvFile
 			}			
 		}
 	}
